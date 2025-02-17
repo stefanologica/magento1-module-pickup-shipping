@@ -11,10 +11,10 @@
             </tuxweb_pickupshipping>
         </helpers>
         <models>
-            <tuxweb_pickupshipping>
+            <pickupshipping>
                 <class>TuxWeb_PickupShipping_Model</class>
                 <resourceModel>pickupshipping_resource</resourceModel>
-            </tuxweb_pickupshipping>
+            </pickupshipping>
             <pickupshipping_resource>
                 <class>TuxWeb_PickupShipping_Model_Resource</class>
                 <entities>
