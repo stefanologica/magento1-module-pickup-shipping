@@ -68,6 +68,7 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Hold down the Ctrl (Windows) or Command (Mac) button to select multiple options.]]></comment>
                         </allowed_provinces>
                     </fields>
                 </pickupshipping>
