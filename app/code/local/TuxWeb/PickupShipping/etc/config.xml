@@ -49,7 +49,7 @@
         <carriers>
             <pickupshipping>
                 <active>1</active>
-                <model>tuxweb_pickupshipping/carrier_pickup</model>
+                <model>TuxWeb_PickupShipping_Model_Carrier_Pickup</model>
                 <title>Ritiro in sede</title>
                 <name>Ritiro in sede</name>
                 <sallowspecific>0</sallowspecific>
