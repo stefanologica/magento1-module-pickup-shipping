@@ -16,21 +16,23 @@ abstract class TuxWeb_PickupShipping_Model_Carrier_Abstract extends Mage_Shippin
         }
 
         $result = Mage::getModel('shipping/rate_result');
+        // Recupera i valori dal backend
+        $methodTitle = Mage::getStoreConfig('carriers/pickupshipping/method_title');
+        $shippingCost = Mage::getStoreConfig('carriers/pickupshipping/shipping_cost');
+        $title = Mage::getStoreConfig('carriers/pickupshipping/title');
+        $allowed_provinces = Mage::getStoreConfig('carriers/pickupshipping/allowed_provinces');
 
         // Check if the shipping method is enabled for the requested province
-        $allowedProvinces = explode(',', $this->getConfigData('allowed_provinces'));
-        if (!in_array($request->getDestRegion(), $allowedProvinces)) {
+        $allowedProvinces = explode(',', $allowed_provinces);
+        if (!in_array($request->getDestRegionCode(), $allowedProvinces)) {
             return false;
         }
 
-        // Define the fixed shipping rate
-        $shippingCost = $this->getConfigData('shipping_cost');
-
         $method = Mage::getModel('shipping/rate_result_method');
         $method->setCarrier($this->_code);
-        $method->setCarrierTitle($this->getConfigData('title'));
+        $method->setCarrierTitle($title);
         $method->setMethod($this->_code);
-        $method->setMethodTitle($this->getConfigData('method_title'));
+        $method->setMethodTitle($methodTitle);
         $method->setPrice($shippingCost);
         $method->setCost($shippingCost);
 
@@ -41,7 +43,7 @@ abstract class TuxWeb_PickupShipping_Model_Carrier_Abstract extends Mage_Shippin
 
     public function getAllowedMethods()
     {
-        $config = array($this->_code => $this->getConfigData('method_title'));
+        $config = array($this->_code => Mage::getStoreConfig('carriers/pickupshipping/method_title'));
         $allowedMethods = array();
         if (count($config)>0) {
             foreach ($config as $row) {
