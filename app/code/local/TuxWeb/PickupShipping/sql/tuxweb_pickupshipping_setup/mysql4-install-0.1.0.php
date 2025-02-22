@@ -12,4 +12,7 @@ $table = $installer->getConnection()
 
 $installer->getConnection()->createTable($table);
 
+//Inserisce i dati di default usando il metodo custom
+$installer->installDefaultProvinces();
+
 $installer->endSetup();

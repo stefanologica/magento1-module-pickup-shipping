@@ -8,13 +8,13 @@ class TuxWeb_PickupShipping_Model_Observer
         $shippingAddress = $quote->getShippingAddress();
         
         // Get the enabled provinces from configuration
-        $enabledProvinces = Mage::getStoreConfig('pickupshipping/general/enabled_provinces');
+        $allowed_provinces = Mage::getStoreConfig('carriers/pickupshipping/allowed_provinces');
         
         // Check if the shipping address province is in the enabled provinces
-        if ($shippingAddress->getRegion() && !in_array($shippingAddress->getRegion(), explode(',', $enabledProvinces))) {
+        if ($shippingAddress->getRegionCode() && !in_array($shippingAddress->getRegionCode(), explode(',', $allowed_provinces))) {
             // Remove pickup shipping method if not available for the province
             $shippingAddress->setCollectShippingRates(true);
-            $shippingAddress->setShippingMethod('owebiashipping1'); // Fallback to  method owebiashipping1
+            $shippingAddress->setShippingMethod('owebiashipping1'); // Fallback to method owebiashipping1
         }
     }
 }
