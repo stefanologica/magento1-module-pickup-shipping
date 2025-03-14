@@ -18,31 +18,39 @@ class TuxWeb_PickupShipping_Model_Observer
         }
     }
 
-    public function filterShippingMethods($observer) {
+    public function filterShippingMethods($observer)
+    {
         $quote = $observer->getEvent()->getQuote();
+        $shippingAddress = $quote->getShippingAddress();
+
         $onlyPickup = false;
 
+        // Controlla se almeno un prodotto ha l'attributo "only_pickup" attivo
         foreach ($quote->getAllItems() as $item) {
-            $product = $item->getProduct();
-            if ($product->getOnlyPickup()) { // prendo l'attributo only_pickup
+            $product = Mage::getModel('catalog/product')->load($item->getProductId());
+            if ($product->getOnlyPickup()) {
                 $onlyPickup = true;
                 break;
             }
         }
 
+        // Se c'è almeno un prodotto con "only_pickup", rimuovi "owebiashipping1"
         if ($onlyPickup) {
-            $shippingAddress = $quote->getShippingAddress();
-            $rates = $shippingAddress->collectShippingRates()->getGroupedAllShippingRates();
+            $rates = $shippingAddress->getGroupedAllShippingRates();
 
             foreach ($rates as $carrier => $rateList) {
                 foreach ($rateList as $rate) {
-                    if ($rate->getCode() !== 'pickupshipping') { //codice metodo spedizione ritiro in sede
+                    if ($rate->getCode() === 'owebiashipping1') {
                         $shippingAddress->unsetShippingRate($rate->getCode());
                     }
                 }
             }
         }
+
+        Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Variabile onlyPickup = '.$onlyPickup);
+
     }
+
 
     /**
      * Metodo per controllare l'ordine prima di confermarlo
@@ -51,18 +59,23 @@ class TuxWeb_PickupShipping_Model_Observer
     {
         $order = $observer->getEvent()->getOrder();
         $items = $order->getAllItems();
-        $hasRestrictedProduct = false;
+
+        $hasPickupProduct = false;
 
         foreach ($items as $item) {
             $product = Mage::getModel('catalog/product')->load($item->getProductId());
-            if ($product->getData('only_pickup')) {
-                $hasRestrictedProduct = true;
+            if ($product->getOnlyPickup()) {
+                $hasPickupProduct = true;
                 break;
             }
         }
 
-        if ($hasRestrictedProduct && $order->getShippingMethod() !== 'pickupshipping') {
-            Mage::throwException("Il tuo ordine contiene prodotti disponibili solo per il ritiro in sede.");
+        // Se c'è un prodotto "only_pickup", accetta solo "pickupshipping" come metodo di spedizione
+        if ($hasPickupProduct && $order->getShippingMethod() !== 'pickupshipping') {
+            Mage::throwException("Puoi concludere l'ordine solo con il metodo di ritiro in sede.");
         }
+        Mage::helper('tuxweb_pickupshipping')->log('Sto validando l\'ordine. Variabile hasPickupProduct = '.$hasPickupProduct);
+
     }
+
 }

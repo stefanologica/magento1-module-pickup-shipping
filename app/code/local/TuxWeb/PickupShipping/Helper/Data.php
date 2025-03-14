@@ -12,7 +12,7 @@
 class TuxWeb_PickupShipping_Helper_Data extends Mage_Core_Helper_Abstract
 {
     const XML_PATH_PICKUPSHIPPING_ENABLED = 'pickupshipping/general/enabled';
-    const XML_PATH_PICKUPSHIPPIN_LOGGING = 'pickupshipping/general/logging';
+    const XML_PATH_PICKUPSHIPPING_LOGGING = 'pickupshipping/general/logging';
 
     /**
      * Log file name.
@@ -28,7 +28,7 @@ class TuxWeb_PickupShipping_Helper_Data extends Mage_Core_Helper_Abstract
      */
     public function log($message)
     {
-        if (Mage::getStoreConfig(self::XML_PATH_TWOWAYLINK_LOGGING)) {
+        if (Mage::getStoreConfig(self::XML_PATH_PICKUPSHIPPING_LOGGING)) {
             Mage::log($message, null, $this->_logFile);
         }
     }
@@ -40,6 +40,6 @@ class TuxWeb_PickupShipping_Helper_Data extends Mage_Core_Helper_Abstract
      */
     public function isEnabled()
     {
-        return Mage::getStoreConfig(self::XML_PATH_TWOWAYLINK_ENABLED);
+        return Mage::getStoreConfig(self::XML_PATH_PICKUPSHIPPING_ENABLED);
     }
 }
