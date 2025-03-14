@@ -61,7 +61,7 @@ class TuxWeb_PickupShipping_Model_Observer
 
         foreach ($items as $item) {
             $product = Mage::getModel('catalog/product')->load($item->getProductId());
-            if ($product->getOnlyPickup()) {
+            if ($product->getData('only_pickup')) {
                 $hasPickupProduct = true;
                 break;
             }
