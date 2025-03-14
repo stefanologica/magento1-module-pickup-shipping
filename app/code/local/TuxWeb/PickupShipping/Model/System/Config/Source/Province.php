@@ -8,7 +8,7 @@ class TuxWeb_PickupShipping_Model_System_Config_Source_Province
     public function toOptionArray()
     {
         $options = [];
-        $collection = Mage::getModel('pickupshipping/province')->getCollection();
+        $collection = Mage::getModel('tuxweb_pickupshipping/province')->getCollection();
 
         foreach ($collection as $province) {
             $options[] = [
