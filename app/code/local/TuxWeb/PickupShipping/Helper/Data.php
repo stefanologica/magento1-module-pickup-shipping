@@ -11,8 +11,9 @@
 
 class TuxWeb_PickupShipping_Helper_Data extends Mage_Core_Helper_Abstract
 {
-    const XML_PATH_PICKUPSHIPPING_ENABLED = 'pickupshipping/general/enabled';
-    const XML_PATH_PICKUPSHIPPING_LOGGING = 'pickupshipping/general/logging';
+    const XML_PATH_PICKUPSHIPPING_ENABLED = 'carriers/pickupshipping/enabled';
+    const XML_PATH_PICKUPSHIPPING_LOGGING = 'carriers/pickupshipping/logging';
+
 
     /**
      * Log file name.
