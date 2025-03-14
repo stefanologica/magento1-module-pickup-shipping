@@ -58,9 +58,11 @@ class TuxWeb_PickupShipping_Model_Observer
         $items = $order->getAllItems();
 
         $hasPickupProduct = false;
+        Mage::helper('tuxweb_pickupshipping')->log('Valore iniziale di hasPickupProduct: ' . var_export($hasPickupProduct, true));
 
         foreach ($items as $item) {
             $product = Mage::getModel('catalog/product')->load($item->getProductId());
+            Mage::helper('tuxweb_pickupshipping')->log('Prodotto: ' . $product->getName() . ' - only_pickup: ' . var_export($product->getData('only_pickup'), true));
             if ($product->getData('only_pickup')) {
                 $hasPickupProduct = true;
                 break;
