@@ -3,6 +3,6 @@ class TuxWeb_PickupShipping_Model_Resource_Province_Collection extends Mage_Core
 {
     protected function _construct()
     {
-        $this->_init('pickupshipping/province');
+        $this->_init('tuxweb_pickupshipping/province');
     }
 }
