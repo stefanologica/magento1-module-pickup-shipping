@@ -1,3 +1,10 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2008-2025 Tux Web Design. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
 <config>
     <modules>
         <TuxWeb_PickupShipping>
@@ -11,18 +18,9 @@
             </tuxweb_pickupshipping>
         </helpers>
         <models>
-            <pickupshipping>
+            <tuxweb_pickupshipping>
                 <class>TuxWeb_PickupShipping_Model</class>
-                <resourceModel>pickupshipping_resource</resourceModel>
-            </pickupshipping>
-            <pickupshipping_resource>
-                <class>TuxWeb_PickupShipping_Model_Resource</class>
-                <entities>
-                    <province>
-                        <table>pickupshipping_province</table>
-                    </province>
-                </entities>
-            </pickupshipping_resource>
+            </tuxweb_pickupshipping>
         </models>
         <resources>
             <tuxweb_pickupshipping_setup>
@@ -37,12 +35,28 @@
          <events>
              <controller_action_predispatch_checkout_onepage_index>
                 <observers>
-                    <tuxweb_pickupshipping>
+                    <pickupshipping_checkpickup>
                         <class>tuxweb_pickupshipping/observer</class>
                         <method>checkPickupAvailability</method>
-                    </tuxweb_pickupshipping>
+                    </pickupshipping_checkpickup>
                 </observers>
             </controller_action_predispatch_checkout_onepage_index>
+            <checkout_shipping_collect_rates_before>
+                <observers>
+                    <pickupshipping_restrict_shipping>
+                        <class>tuxweb_pickupshipping/observer</class>
+                        <method>filterShippingMethods</method>
+                    </pickupshipping_restrict_shipping>
+                </observers>
+            </checkout_shipping_collect_rates_before>
+            <sales_order_place_before>
+                <observers>
+                    <pickupshipping_order_check>
+                        <class>tuxweb_pickupshipping/observer</class>
+                        <method>validateOrder</method>
+                    </pickupshipping_order_check>
+                </observers>
+            </sales_order_place_before>
         </events>
     </global>
     <default>
