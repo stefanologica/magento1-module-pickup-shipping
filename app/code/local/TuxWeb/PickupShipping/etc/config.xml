@@ -8,7 +8,7 @@
 <config>
     <modules>
         <TuxWeb_PickupShipping>
-            <version>0.1.0</version>
+            <version>0.1.5</version>
         </TuxWeb_PickupShipping>
     </modules>
     <global>
