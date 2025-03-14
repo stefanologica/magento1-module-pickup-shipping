@@ -5,7 +5,7 @@
  * @category  TuxWeb
  * @package   TuxWeb_PickupShipping
  * @author    Stefano Tusino <webmaster@tuxwebdesign.it>
- * @copyright Copyright (c) 2025 Youn Kim (https://github.com/stefanologica)
+ * @copyright Copyright (c) 2025 Stefano Tux (https://github.com/stefanologica)
  * @license   http://www.gnu.org/licenses/gpl-3.0.html
  */
 

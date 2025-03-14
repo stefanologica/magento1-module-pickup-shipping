@@ -13,7 +13,7 @@ class TuxWeb_PickupShipping_Model_System_Config_Source_Province
         foreach ($collection as $province) {
             $options[] = [
                 'value' => $province->getProvinceCode(),
-                'label' => $province->getProvinceCode()
+                'label' => $province->getProvinceLabel()
             ];
         }
 
