@@ -44,7 +44,8 @@ class TuxWeb_PickupShipping_Model_Observer
             }
         }
 
-        Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Variabile onlyPickup = '.$restrictPickup);
+        //Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Variabile onlyPickup = '.$restrictPickup);
+        Mage::log('Sto filtrando i metodi di spedizione. Variabile onlyPickup = '.$restrictPickup, null, 'tuxweb-pickupshipping.log');
 
     }
 
