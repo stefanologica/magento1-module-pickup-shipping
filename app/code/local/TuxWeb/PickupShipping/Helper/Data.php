@@ -18,7 +18,7 @@ class TuxWeb_PickupShipping_Helper_Data extends Mage_Core_Helper_Abstract
     /**
      * Log file name.
      *
-     * @var str
+     * @var string
      */
     protected $_logFile = 'tuxweb-pickupshipping.log';
 
