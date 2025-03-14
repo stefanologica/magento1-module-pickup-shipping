@@ -22,32 +22,29 @@ class TuxWeb_PickupShipping_Model_Observer
     {
         $quote = $observer->getEvent()->getQuote();
         $shippingAddress = $quote->getShippingAddress();
+        $rates = $shippingAddress->getGroupedAllShippingRates();
 
-        $onlyPickup = false;
+        $restrictPickup = false;
 
-        // Controlla se almeno un prodotto ha l'attributo "only_pickup" attivo
         foreach ($quote->getAllItems() as $item) {
-            $product = Mage::getModel('catalog/product')->load($item->getProductId());
-            if ($product->getOnlyPickup()) {
-                $onlyPickup = true;
+            $product = $item->getProduct();
+            if ($product->getData('only_pickup')) {
+                $restrictPickup = true;
                 break;
             }
         }
 
-        // Se c'è almeno un prodotto con "only_pickup", rimuovi "owebiashipping1"
-        if ($onlyPickup) {
-            $rates = $shippingAddress->getGroupedAllShippingRates();
-
-            foreach ($rates as $carrier => $rateList) {
-                foreach ($rateList as $rate) {
-                    if ($rate->getCode() === 'owebiashipping1') {
-                        $shippingAddress->unsetShippingRate($rate->getCode());
+        if ($restrictPickup) {
+            foreach ($rates as $carrierRates) {
+                foreach ($carrierRates as $rate) {
+                    if ($rate->getCode() !== 'pickupshipping') {
+                        $shippingAddress->removeItem($rate->getId());
                     }
                 }
             }
         }
 
-        Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Variabile onlyPickup = '.$onlyPickup);
+        Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Variabile onlyPickup = '.$restrictPickup);
 
     }
 
