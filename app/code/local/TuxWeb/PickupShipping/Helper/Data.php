@@ -20,17 +20,17 @@ class TuxWeb_PickupShipping_Helper_Data extends Mage_Core_Helper_Abstract
      *
      * @var str
      */
-    protected $_logFile = 'tuxweb_pickupshipping.log';
+    protected $_logFile = 'tuxweb-pickupshipping.log';
 
     /**
      * Writes extension messages to the log file.
      *
-     * @param str $message
+     * @param string $message
      */
     public function log($message)
     {
         if (Mage::getStoreConfig(self::XML_PATH_PICKUPSHIPPING_LOGGING)) {
-            Mage::log($message, null, $this->_logFile);
+            Mage::log($message, null, $this->_logFile, true);
         }
     }
 
