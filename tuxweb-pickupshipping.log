@@ -1,1 +1,9 @@
 2025-03-14T23:39:00+00:00 DEBUG (7): Sto validando l'ordine. Variabile hasPickupProduct = 
+2025-03-14T23:49:14+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-14T23:49:14+00:00 DEBUG (7): Prodotto: MATERIALE DECORATIVO-VERDE SCURO-GRANA GROSSA-30G - only_pickup: NULL
+2025-03-14T23:49:14+00:00 DEBUG (7): Prodotto: Rastrello a 10 denti 25cm - only_pickup: NULL
+2025-03-14T23:49:14+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-14T23:49:20+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-14T23:49:20+00:00 DEBUG (7): Prodotto: MATERIALE DECORATIVO-VERDE SCURO-GRANA GROSSA-30G - only_pickup: NULL
+2025-03-14T23:49:20+00:00 DEBUG (7): Prodotto: Rastrello a 10 denti 25cm - only_pickup: NULL
+2025-03-14T23:49:20+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
