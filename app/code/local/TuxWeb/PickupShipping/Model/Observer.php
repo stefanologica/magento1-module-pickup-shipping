@@ -21,8 +21,6 @@ class TuxWeb_PickupShipping_Model_Observer
     public function filterShippingMethods($observer)
     {
         $quote = $observer->getEvent()->getQuote();
-        $shippingAddress = $quote->getShippingAddress();
-        $rates = $shippingAddress->getGroupedAllShippingRates();
 
         $restrictPickup = false;
 
@@ -35,18 +33,19 @@ class TuxWeb_PickupShipping_Model_Observer
             }
         }
 
+        // Se esiste un prodotto con l'attributo "only_pickup", nascondi owebiashipping1
         if ($restrictPickup) {
-            Mage::helper('tuxweb_pickupshipping')->log('carrierRates: ' . var_dump($rates));
-            foreach ($rates as $carrierRates) {
-                foreach ($carrierRates as $rate) {
-                    if ($rate->getCode() !== 'pickupshipping_pickupshipping') {
-                        $shippingAddress->removeItem($rate->getId());
-                        Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Variabile onlyPickup = '.$product->getData('only_pickup'));
-                        return;
-                    }
+            $shippingAddress = $quote->getShippingAddress();
+            $rates = $shippingAddress->getShippingRatesCollection();
+
+            foreach ($rates as $rate) {
+                if ($rate->getCode() === 'owebiashipping1') {
+                    $rates->removeItemByKey($rate->getId());
+                    Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Metodo di spedizione nascosto: ' . $rate->getCode());
+
                 }
             }
-        }
+        }       
 
     }
 
