@@ -123,3 +123,7 @@
 2025-03-15T14:57:01+00:00 DEBUG (7): RestrictPickup: true
 2025-03-15T14:57:01+00:00 DEBUG (7): carrierRates: 
 2025-03-15T15:03:05+00:00 DEBUG (7): RestrictPickup: true
+2025-03-15T15:07:52+00:00 DEBUG (7): RestrictPickup: true
+2025-03-15T15:08:21+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-15T15:08:21+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-15T15:08:21+00:00 DEBUG (7): Prodotto con only_pickup trovato!

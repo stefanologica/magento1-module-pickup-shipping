@@ -20,7 +20,8 @@ class TuxWeb_PickupShipping_Model_Observer
 
     public function filterShippingMethods($observer)
     {
-        $quote = $observer->getEvent()->getQuote();
+        // Ottieni la quote (il carrello corrente)
+        $quote = Mage::getSingleton('checkout/session')->getQuote();
 
         $restrictPickup = false;
 
