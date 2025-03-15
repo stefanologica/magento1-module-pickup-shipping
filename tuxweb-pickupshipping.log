@@ -118,3 +118,4 @@
 2025-03-15T14:40:02+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
 2025-03-15T14:40:02+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
 2025-03-15T14:46:05+00:00 DEBUG (7): RestrictPickup: true
+2025-03-15T14:50:21+00:00 DEBUG (7): RestrictPickup: true
