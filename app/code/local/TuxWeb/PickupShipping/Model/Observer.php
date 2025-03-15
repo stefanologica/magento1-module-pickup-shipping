@@ -38,7 +38,8 @@ class TuxWeb_PickupShipping_Model_Observer
         if ($restrictPickup) {
             $shippingAddress = $quote->getShippingAddress();
             $shippingAddress->setCollectShippingRates(true)->collectShippingRates();
-            
+            $quote->save();
+
             $rates = $shippingAddress->getShippingRatesCollection();
 
             Mage::helper('tuxweb_pickupshipping')->log('Shipping Address: ' . print_r($shippingAddress->getData(), true));
