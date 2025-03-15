@@ -39,6 +39,8 @@ class TuxWeb_PickupShipping_Model_Observer
             $shippingAddress = $quote->getShippingAddress();
             $rates = $shippingAddress->getShippingRatesCollection();
 
+            Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. : ' . var_dump($rates));
+
             foreach ($rates as $rate) {
                 if (strpos($rate->getCode(), 'owebiashipping1') !== false) {
                     $rates->removeItemByKey($rate->getId());

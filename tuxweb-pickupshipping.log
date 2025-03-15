@@ -127,3 +127,4 @@
 2025-03-15T15:08:21+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
 2025-03-15T15:08:21+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
 2025-03-15T15:08:21+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T15:11:40+00:00 DEBUG (7): RestrictPickup: true
