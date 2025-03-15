@@ -128,3 +128,12 @@
 2025-03-15T15:08:21+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
 2025-03-15T15:08:21+00:00 DEBUG (7): Prodotto con only_pickup trovato!
 2025-03-15T15:11:40+00:00 DEBUG (7): RestrictPickup: true
+2025-03-15T15:15:24+00:00 DEBUG (7): RestrictPickup: true
+2025-03-15T15:15:24+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. : 
+2025-03-15T15:16:17+00:00 DEBUG (7): RestrictPickup: true
+2025-03-15T15:16:17+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. : 
+2025-03-15T15:19:08+00:00 DEBUG (7): RestrictPickup: true
+2025-03-15T15:19:08+00:00 DEBUG (7): Lista dei metodi di spedizione: Array
+(
+)
+
