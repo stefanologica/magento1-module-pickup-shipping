@@ -25,6 +25,8 @@ class TuxWeb_PickupShipping_Model_Observer
 
         $restrictPickup = false;
 
+        Mage::helper('tuxweb_pickupshipping')->log('Ciao sono entrato nel mio filterShippingMethods');
+
         foreach ($quote->getAllItems() as $item) {
             $product = $item->getProduct();
             if (intval($product->getData('only_pickup')) == 1) {
