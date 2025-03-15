@@ -52,14 +52,14 @@
                     </pickupshipping_checkpickup>
                 </observers>
             </controller_action_predispatch_checkout_onepage_index>
-            <checkout_controller_onepage_shipping_method>
+            <sales_quote_collect_totals_after>
                 <observers>
                     <pickupshipping_restrict_shipping>
                         <class>tuxweb_pickupshipping/observer</class>
                         <method>filterShippingMethods</method>
                     </pickupshipping_restrict_shipping>
                 </observers>
-            </checkout_controller_onepage_shipping_method>
+            </sales_quote_collect_totals_after>
             <sales_order_place_before>
                 <observers>
                     <pickupshipping_order_check>
