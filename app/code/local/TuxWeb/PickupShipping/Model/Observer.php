@@ -45,7 +45,7 @@ class TuxWeb_PickupShipping_Model_Observer
             $rates = $shippingAddress->getShippingRatesCollection();
 
             //Mage::helper('tuxweb_pickupshipping')->log('Shipping Address: ' . print_r($shippingAddress->debug(), true));
-            Mage::helper('tuxweb_pickupshipping')->log('Rates Collection Count: ' . count($rates->getItems()));
+            Mage::helper('tuxweb_pickupshipping')->log('Shipping Rates: ' . print_r($rates->getData(), true));
 
             foreach ($rates as $rate) {
                 Mage::helper('tuxweb_pickupshipping')->log('Lista dei metodi di spedizione: ' . print_r($rate->getCode(), true));
