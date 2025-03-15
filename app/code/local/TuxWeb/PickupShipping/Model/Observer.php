@@ -45,9 +45,10 @@ class TuxWeb_PickupShipping_Model_Observer
             $rates = $shippingAddress->getShippingRatesCollection();
 
             //Mage::helper('tuxweb_pickupshipping')->log('Shipping Address: ' . print_r($shippingAddress->debug(), true));
-            Mage::helper('tuxweb_pickupshipping')->log('Shipping Rates: ' . print_r($rates->getData(), true));
+            //Mage::helper('tuxweb_pickupshipping')->log('Shipping Rates: ' . print_r($rates->getData(), true));
+            $ratesArray = $rates->getItems();
 
-            foreach ($rates as $rate) {
+            foreach ($ratesArray as $rate) {
                 Mage::helper('tuxweb_pickupshipping')->log('Metodo: ' . $rate->getCode() . ' - Prezzo: ' . $rate->getPrice());
                 if (strpos($rate->getCode(), 'owebiashipping1') !== false) {
                     $rates->removeItemByKey($rate->getId());
