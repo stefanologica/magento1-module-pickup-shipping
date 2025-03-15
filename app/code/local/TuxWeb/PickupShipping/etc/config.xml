@@ -68,6 +68,14 @@
                     </pickupshipping_order_check>
                 </observers>
             </sales_order_place_after>
+            <paypal_ipn_callback>
+                <observers>
+                    <pickupshipping_order_check>
+                        <class>tuxweb_pickupshipping/observer</class>
+                        <method>validateOrder</method>
+                    </pickupshipping_order_check>
+                </observers>
+            </paypal_ipn_callback>
         </events>
     </global>
     <default>
