@@ -75,7 +75,7 @@ class TuxWeb_PickupShipping_Model_Observer
 
         // Se c'è un prodotto "only_pickup", accetta solo "pickupshipping" come metodo di spedizione
         if ($hasPickupProduct && strtolower($order->getShippingMethod()) !== 'pickupshipping_pickupshipping') {
-            Mage::throwException("Puoi concludere l'ordine solo con il metodo di ritiro in sede.");
+            Mage::throwException("Puoi concludere l'ordine solo con il metodo di ritiro in sede. Il prodotto ". $product->getName() ." presente nel carrello è disponibile esclusivamente tramite il ritiro in sede.");
         }
         Mage::helper('tuxweb_pickupshipping')->log('Sto validando l\'ordine. Variabile hasPickupProduct = '.$hasPickupProduct);
 
