@@ -46,9 +46,8 @@ class TuxWeb_PickupShipping_Model_Observer
 
             Mage::helper('tuxweb_pickupshipping')->log('Shipping Address: ' . print_r($shippingAddress->debug(), true));
 
-            Mage::helper('tuxweb_pickupshipping')->log('Lista dei metodi di spedizione: ' . print_r($rates, true));
-
             foreach ($rates as $rate) {
+                Mage::helper('tuxweb_pickupshipping')->log('Lista dei metodi di spedizione: ' . print_r($rate->getCode(), true));
                 if (strpos($rate->getCode(), 'owebiashipping1') !== false) {
                     $rates->removeItemByKey($rate->getId());
                     Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Metodo di spedizione nascosto: ' . $rate->getCode());
