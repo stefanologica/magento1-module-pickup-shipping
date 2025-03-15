@@ -34,3 +34,77 @@
 2025-03-15T00:04:42+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
 2025-03-15T00:04:42+00:00 DEBUG (7): Prodotto con only_pickup trovato!
 2025-03-15T00:04:42+00:00 DEBUG (7): Order Shipping Method salvato: pickupshipping_pickupshipping
+2025-03-15T00:09:05+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-15T00:09:05+00:00 DEBUG (7): Prodotto: MATERIALE DECORATIVO-VERDE SCURO-GRANA GROSSA-30G - only_pickup: NULL
+2025-03-15T00:09:05+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-15T00:09:05+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T00:09:13+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-15T00:09:13+00:00 DEBUG (7): Prodotto: MATERIALE DECORATIVO-VERDE SCURO-GRANA GROSSA-30G - only_pickup: NULL
+2025-03-15T00:09:13+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-15T00:09:13+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T00:09:13+00:00 DEBUG (7): Sto validando l'ordine. Variabile hasPickupProduct = 1
+2025-03-15T11:28:20+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-15T11:28:20+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-15T11:28:20+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T11:28:23+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-15T11:28:23+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-15T11:28:23+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T11:36:20+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-15T11:36:20+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-15T11:36:20+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T11:37:13+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-15T11:37:13+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-15T11:37:13+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T11:37:13+00:00 DEBUG (7): Sto validando l'ordine. Variabile hasPickupProduct = 1
+2025-03-15T13:21:39+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-15T13:21:39+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-15T13:21:39+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T14:27:23+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:23+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 1
+2025-03-15T14:27:23+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:23+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:26+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:26+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:26+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:26+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:34+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:34+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:34+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:34+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:34+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:34+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:35+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:35+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:35+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:27:35+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:01+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:01+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:01+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:01+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:03+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:03+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:03+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:03+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:18+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:18+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:18+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:18+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:25+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:25+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:25+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:25+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:30+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:30+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:42+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:42+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:42+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:42+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:43+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:43+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:44+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-15T14:28:44+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-15T14:28:44+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T14:28:50+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:50+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:50+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 
+2025-03-15T14:28:50+00:00 DEBUG (7): Sto filtrando i metodi di spedizione. Variabile onlyPickup = 

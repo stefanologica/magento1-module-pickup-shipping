@@ -26,13 +26,11 @@ class TuxWeb_PickupShipping_Model_Observer
 
         $restrictPickup = false;
 
-        Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Variabile onlyPickup = '.$restrictPickup);
-
-
         foreach ($quote->getAllItems() as $item) {
             $product = $item->getProduct();
             if (intval($product->getData('only_pickup')) == 1) {
                 $restrictPickup = true;
+                Mage::helper('tuxweb_pickupshipping')->log('RestrictPickup: ' . ($restrictPickup ? 'true' : 'false'));
                 break;
             }
         }
@@ -47,7 +45,7 @@ class TuxWeb_PickupShipping_Model_Observer
             }
         }
 
-        Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Variabile onlyPickup = '.$restrictPickup);
+        Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Variabile onlyPickup = '.$product->getData('only_pickup'));
 
     }
 
