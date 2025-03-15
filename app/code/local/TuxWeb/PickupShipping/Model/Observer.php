@@ -47,13 +47,13 @@ class TuxWeb_PickupShipping_Model_Observer
                     $_title = $_code;
                 $options[] = array('value' => $_code, 'label' => $_title . " ($_code)");
 
-                /*if (strpos($rate->getCode(), 'owebiashipping1') !== false) {
-                    $rates->removeItemByKey($rate->getId());
-                    Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Metodo di spedizione nascosto: ' . $rate->getCode());
+                if ($options[0]['value'] == 'owebiashipping1') {
+                    //$rates->removeItemByKey($rate->getId());
+                    //Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Metodo di spedizione nascosto: ' . $rate->getCode());
 
-                }*/
+                }
             }
-            Mage::helper('tuxweb_pickupshipping')->log('Lista Metodi: ' .$options[0]['value']." - " .$options[0]['label']." - ". print_r($options, true));
+           //Mage::helper('tuxweb_pickupshipping')->log('Lista Metodi: ' .$options[0]['value']." - " .$options[0]['label']." - ". print_r($options, true));
 
         }       
 
