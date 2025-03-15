@@ -37,6 +37,7 @@ class TuxWeb_PickupShipping_Model_Observer
         // Se esiste un prodotto con l'attributo "only_pickup", nascondi owebiashipping1
         if ($restrictPickup) {
             $shippingAddress = $quote->getShippingAddress();
+            $shippingAddress->setCollectShippingRates(true)->collectShippingRates();
             $rates = $shippingAddress->getShippingRatesCollection();
 
             Mage::helper('tuxweb_pickupshipping')->log('Lista dei metodi di spedizione: ' . print_r($rates->getItems(), true));
