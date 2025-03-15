@@ -40,12 +40,12 @@ class TuxWeb_PickupShipping_Model_Observer
                 foreach ($carrierRates as $rate) {
                     if ($rate->getCode() !== 'pickupshipping_pickupshipping') {
                         $shippingAddress->removeItem($rate->getId());
+                        Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Variabile onlyPickup = '.$product->getData('only_pickup'));
+                        return;
                     }
                 }
             }
         }
-
-        Mage::helper('tuxweb_pickupshipping')->log('Sto filtrando i metodi di spedizione. Variabile onlyPickup = '.$product->getData('only_pickup'));
 
     }
 
