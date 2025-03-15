@@ -60,14 +60,14 @@
                     </pickupshipping_restrict_shipping>
                 </observers>
             </sales_quote_collect_totals_after>
-            <checkout_onepage_controller_save_payment_method>
+            <sales_order_place_after>
                 <observers>
                     <pickupshipping_order_check>
                         <class>tuxweb_pickupshipping/observer</class>
                         <method>validateOrder</method>
                     </pickupshipping_order_check>
                 </observers>
-            </checkout_onepage_controller_save_payment_method>
+            </sales_order_place_after>
         </events>
     </global>
     <default>
