@@ -40,7 +40,7 @@ class TuxWeb_PickupShipping_Model_Observer
         if ($restrictPickup) {
             foreach ($rates as $carrierRates) {
                 foreach ($carrierRates as $rate) {
-                    if ($rate->getCode() !== 'pickupshipping') {
+                    if ($rate->getCode() !== 'pickupshipping_pickupshipping') {
                         $shippingAddress->removeItem($rate->getId());
                     }
                 }
