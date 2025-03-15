@@ -150,3 +150,346 @@
 2025-03-15T15:45:49+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
 2025-03-15T15:45:49+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
 2025-03-15T15:45:49+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T15:53:32+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:53:32+00:00 DEBUG (7): RestrictPickup: true
+2025-03-15T15:53:43+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:53:43+00:00 DEBUG (7): RestrictPickup: true
+2025-03-15T15:53:49+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:53:49+00:00 DEBUG (7): RestrictPickup: true
+2025-03-15T15:56:55+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:56:55+00:00 DEBUG (7): RestrictPickup: true
+2025-03-15T15:56:55+00:00 DEBUG (7): Shipping Address: Array
+(
+    [address_type] => shipping
+    [quote_id] => 6309
+    [collect_shipping_rates] => 
+    [extra_tax_amount] => 0
+    [base_extra_tax_amount] => 0
+    [subtotal] => 5.98
+    [base_subtotal] => 5.98
+    [grand_total] => 7.3
+    [base_grand_total] => 7.3
+    [recurring_initial_fee_amount] => 0
+    [base_recurring_initial_fee_amount] => 0
+    [cached_items_all] => Array
+        (
+            [0 (Mage_Sales_Model_Quote_Item)] => Array
+                (
+                    [quote_id] => 6309
+                    [store_id] => 1
+                    [product (Mage_Catalog_Model_Product)] => Array
+                        (
+                            [store_id] => 1
+                            [entity_id] => 259
+                            [entity_type_id] => 4
+                            [attribute_set_id] => 4
+                            [type_id] => simple
+                            [sku] => S2004
+                            [has_options] => 0
+                            [required_options] => 0
+                            [created_at] => 2020-09-16T16:30:42+02:00
+                            [updated_at] => 2025-03-14 09:59:34
+                            [status] => 1
+                            [is_recurring] => 0
+                            [visibility] => 4
+                            [tax_class_id] => 1
+                            [featured] => 0
+                            [prodotti_fb] => 467
+                            [only_pickup] => 1
+                            [price] => 7.3000
+                            [weight] => 0.0000
+                            [name] => Paletta stretta
+                            [image] => /s/2/s2004.jpg
+                            [small_image] => /s/2/s2004.jpg
+                            [thumbnail] => /s/2/s2004.jpg
+                            [url_key] => paletta-stretta
+                            [url_path] => paletta-stretta
+                            [options_container] => container1
+                            [msrp_enabled] => 2
+                            [msrp_display_actual_price_type] => 4
+                            [delivery_time] => 2-3 Tage
+                            [meta_autogenerate] => 0
+                            [product_page_type] => custom
+                            [duebit_attribute_ean] => 8016604200564
+                            [google_shopping_root_category] => Giardinaggio
+                            [description] => \<P>Descrizione materiale:  &#x2022; struttura in acciaio verniciato lucido con smalto nero. &#x2022; manico di plastica dura arancione e nera.\</P>\<P>Lunghezza in cm:  34\</P>\<P>Peso in grammi:  174\</P>
+                            [short_description] => \<P> Paletta per piccoli lavori di scavo in giardino, con base stretta.\</P>
+                            [group_price] => Array
+                                (
+                                )
+
+                            [group_price_changed] => 0
+                            [media_gallery] => Array
+                                (
+                                    [images] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [value_id] => 5429
+                                                    [file] => /s/2/s2004.jpg
+                                                    [product_id] => 259
+                                                    [label] => 
+                                                    [position] => 0
+                                                    [disabled] => 0
+                                                    [position_default] => 0
+                                                    [disabled_default] => 0
+                                                )
+
+                                        )
+
+                                    [values] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [tier_price] => Array
+                                (
+                                )
+
+                            [tier_price_changed] => 0
+                            [stock_item (Mage_CatalogInventory_Model_Stock_Item)] => Array
+                                (
+                                    [item_id] => 259
+                                    [product_id] => 259
+                                    [stock_id] => 1
+                                    [qty] => 7.0000
+                                    [min_qty] => 0.0000
+                                    [use_config_min_qty] => 1
+                                    [is_qty_decimal] => 0
+                                    [backorders] => 0
+                                    [use_config_backorders] => 1
+                                    [min_sale_qty] => 1.0000
+                                    [use_config_min_sale_qty] => 1
+                                    [max_sale_qty] => 0.0000
+                                    [use_config_max_sale_qty] => 1
+                                    [is_in_stock] => 1
+                                    [use_config_notify_stock_qty] => 1
+                                    [manage_stock] => 0
+                                    [use_config_manage_stock] => 1
+                                    [stock_status_changed_auto] => 0
+                                    [use_config_qty_increments] => 1
+                                    [qty_increments] => 0.0000
+                                    [use_config_enable_qty_inc] => 1
+                                    [enable_qty_increments] => 0
+                                    [is_decimal_divided] => 0
+                                    [type_id] => simple
+                                    [stock_status_changed_automatically] => 0
+                                    [use_config_enable_qty_increments] => 1
+                                    [product_name] => Paletta stretta
+                                    [store_id] => 1
+                                    [product_type_id] => simple
+                                    [product_status_changed] => 1
+                                    [ordered_items] => 1
+                                )
+
+                            [is_in_stock] => 1
+                            [is_salable] => 1
+                            [website_ids] => Array
+                                (
+                                    [0] => 1
+                                )
+
+                            [cart_qty] => 1
+                            [qty] => 1
+                            [customer_group_id] => 0
+                            [category_ids] => Array
+                                (
+                                    [0] => 206
+                                    [1] => 512
+                                )
+
+                        )
+
+                    [product_id] => 259
+                    [product_type] => simple
+                    [sku] => S2004
+                    [name] => Paletta stretta
+                    [weight] => 0.0000
+                    [tax_class_id] => 1
+                    [is_recurring] => 0
+                    [is_qty_decimal] => 0
+                    [is_nominal] => 
+                    [qty_to_add] => 1
+                    [qty] => 1
+                    [qty_options] => Array
+                        (
+                        )
+
+                    [calculation_price] => 5.98
+                    [converted_price] => 5.98
+                    [price] => 5.98
+                    [base_original_price] => 7.3
+                    [row_total] => 5.98
+                    [base_row_total] => 5.98
+                    [free_shipping] => 
+                    [tax_percent] => 22
+                    [row_tax] => 1.32
+                    [base_row_tax] => 1.32
+                    [base_price] => 5.98
+                    [price_incl_tax] => 7.3
+                    [base_price_incl_tax] => 7.3
+                    [row_total_incl_tax] => 7.3
+                    [base_row_total_incl_tax] => 7.3
+                    [taxable_amount] => 7.3
+                    [base_taxable_amount] => 7.3
+                    [is_price_incl_tax] => 1
+                    [discount_calculation_price] => 7.3
+                    [base_discount_calculation_price] => 7.3
+                    [weee_tax_applied] => a:0:{}
+                    [base_weee_tax_disposition] => 0
+                    [weee_tax_disposition] => 0
+                    [base_weee_tax_row_disposition] => 0
+                    [weee_tax_row_disposition] => 0
+                    [base_weee_tax_applied_amount] => 0
+                    [base_weee_tax_applied_row_amount] => 0
+                    [weee_tax_applied_amount] => 0
+                    [weee_tax_applied_row_amount] => 0
+                    [row_weight] => 0
+                    [discount_amount] => 0
+                    [base_discount_amount] => 0
+                    [discount_percent] => 0
+                    [original_price] => 7.3
+                    [applied_rates] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [rates] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [code] => IT - IVA 22%
+                                                    [title] => IVA 22%
+                                                    [percent] => 22
+                                                    [position] => 0
+                                                    [priority] => 1
+                                                    [rule_id] => 2
+                                                )
+
+                                        )
+
+                                    [percent] => 22
+                                    [id] => IT - IVA 22%
+                                )
+
+                        )
+
+                    [applied_rule_ids] => 
+                    [tax_amount] => 1.32
+                    [base_tax_amount] => 1.32
+                    [hidden_tax_amount] => 0
+                    [base_hidden_tax_amount] => 0
+                    [discount_tax_compensation] => 0
+                    [is_virtual] => 
+                    [created_at] => 2025-03-15 15:56:55
+                    [updated_at] => 2025-03-15 15:56:55
+                    [item_id] => 20886
+                )
+
+        )
+
+    [cached_items_nominal] => Array
+        (
+        )
+
+    [cached_items_nonnominal] => Array
+        (
+            [0 (Mage_Sales_Model_Quote_Item)] => *** RECURSION ***
+        )
+
+    [recurring_trial_payment_amount] => 0
+    [base_recurring_trial_payment_amount] => 0
+    [nominal_subtotal_amount] => 0
+    [base_nominal_subtotal_amount] => 0
+    [total_qty] => 1
+    [base_virtual_amount] => 0
+    [virtual_amount] => 0
+    [subtotal_incl_tax] => 7.3
+    [base_subtotal_incl_tax] => 7.3
+    [nominal_discount_amount] => 0
+    [base_nominal_discount_amount] => 0
+    [nominal_weee_amount] => 0
+    [base_nominal_weee_amount] => 0
+    [nominal_tax_amount] => 0
+    [base_nominal_tax_amount] => 0
+    [shipping_tax_amount] => 0
+    [base_shipping_tax_amount] => 0
+    [applied_taxes] => a:1:{s:12:"IT - IVA 22%";a:6:{s:5:"rates";a:1:{i:0;a:6:{s:4:"code";s:12:"IT - IVA 22%";s:5:"title";s:7:"IVA 22%";s:7:"percent";d:22;s:8:"position";s:1:"0";s:8:"priority";s:1:"1";s:7:"rule_id";s:1:"2";}}s:7:"percent";d:22;s:2:"id";s:12:"IT - IVA 22%";s:7:"process";i:0;s:6:"amount";d:1.32;s:11:"base_amount";d:1.32;}}
+    [msrp_amount] => 0
+    [base_msrp_amount] => 0
+    [can_apply_msrp] => 
+    [freeshipping_amount] => 0
+    [base_freeshipping_amount] => 0
+    [free_shipping] => 0
+    [rounding_deltas] => Array
+        (
+            [regular1] => Array
+                (
+                    [22] => -0.0036055573770495
+                )
+
+            [base1] => Array
+                (
+                    [22] => -0.0036055573770495
+                )
+
+        )
+
+    [weee_amount] => 0
+    [base_weee_amount] => 0
+    [applied_taxes_reset] => 1
+    [shipping_amount] => 0
+    [base_shipping_amount] => 0
+    [weight] => 0
+    [free_method_weight] => 0
+    [item_qty] => 1
+    [tax_shipping_amount] => 0
+    [base_tax_shipping_amount] => 0
+    [shipping_incl_tax] => 0
+    [base_shipping_incl_tax] => 0
+    [shipping_taxable] => 0
+    [base_shipping_taxable] => 0
+    [is_shipping_incl_tax] => 1
+    [shipping_amount_for_discount] => 0
+    [base_shipping_amount_for_discount] => 0
+    [discount_amount] => 0
+    [base_discount_amount] => 0
+    [cart_fixed_rules] => Array
+        (
+        )
+
+    [discount_description] => 
+    [applied_rule_ids] => 
+    [shipping_discount_amount] => 0
+    [base_shipping_discount_amount] => 0
+    [base_cod_fee] => 0
+    [cod_fee] => 0
+    [cod_tax_amount] => 0
+    [base_cod_tax_amount] => 0
+    [tax_amount] => 1.32
+    [base_tax_amount] => 1.32
+    [shipping_hidden_tax_amount] => 0
+    [base_shipping_hidden_tax_amount] => 0
+    [hidden_tax_amount] => 0
+    [base_hidden_tax_amount] => 0
+    [same_as_billing] => 1
+    [created_at] => 2025-03-15 15:56:55
+    [updated_at] => 2025-03-15 15:56:55
+    [address_id] => 12630
+)
+
+2025-03-15T15:56:55+00:00 DEBUG (7): Lista dei metodi di spedizione: Array
+(
+)
+
+2025-03-15T15:56:55+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:56:57+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:56:57+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:57:01+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:57:01+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:57:06+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:57:06+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:57:07+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:57:07+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:57:07+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods
+2025-03-15T15:57:07+00:00 DEBUG (7): Ciao sono entrato nel mio filterShippingMethods

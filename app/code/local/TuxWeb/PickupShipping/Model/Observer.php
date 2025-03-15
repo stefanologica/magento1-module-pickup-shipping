@@ -25,7 +25,7 @@ class TuxWeb_PickupShipping_Model_Observer
 
         $restrictPickup = false;
 
-        Mage::helper('tuxweb_pickupshipping')->log('Ciao sono entrato nel mio filterShippingMethods');
+        //Mage::helper('tuxweb_pickupshipping')->log('Ciao sono entrato nel mio filterShippingMethods');
 
         foreach ($quote->getAllItems() as $item) {
             $product = $item->getProduct();
@@ -46,7 +46,7 @@ class TuxWeb_PickupShipping_Model_Observer
 
             Mage::helper('tuxweb_pickupshipping')->log('Shipping Address: ' . print_r($shippingAddress->debug(), true));
 
-            Mage::helper('tuxweb_pickupshipping')->log('Lista dei metodi di spedizione: ' . print_r($rates->getItems(), true));
+            Mage::helper('tuxweb_pickupshipping')->log('Lista dei metodi di spedizione: ' . print_r($rates, true));
 
             foreach ($rates as $rate) {
                 if (strpos($rate->getCode(), 'owebiashipping1') !== false) {
