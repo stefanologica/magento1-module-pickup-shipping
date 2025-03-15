@@ -19,3 +19,18 @@
 2025-03-14T23:57:07+00:00 DEBUG (7): Prodotto: MATERIALE DECORATIVO-VERDE SCURO-GRANA GROSSA-30G - only_pickup: NULL
 2025-03-14T23:57:07+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
 2025-03-14T23:57:07+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T00:04:26+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-15T00:04:26+00:00 DEBUG (7): Prodotto: MATERIALE DECORATIVO-VERDE SCURO-GRANA GROSSA-30G - only_pickup: NULL
+2025-03-15T00:04:26+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-15T00:04:26+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T00:04:26+00:00 DEBUG (7): Order Shipping Method salvato: owebiashipping1_standard
+2025-03-15T00:04:37+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-15T00:04:37+00:00 DEBUG (7): Prodotto: MATERIALE DECORATIVO-VERDE SCURO-GRANA GROSSA-30G - only_pickup: NULL
+2025-03-15T00:04:37+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-15T00:04:37+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T00:04:37+00:00 DEBUG (7): Order Shipping Method salvato: owebiashipping1_standard
+2025-03-15T00:04:42+00:00 DEBUG (7): Valore iniziale di hasPickupProduct: false
+2025-03-15T00:04:42+00:00 DEBUG (7): Prodotto: MATERIALE DECORATIVO-VERDE SCURO-GRANA GROSSA-30G - only_pickup: NULL
+2025-03-15T00:04:42+00:00 DEBUG (7): Prodotto: Paletta stretta - only_pickup: '1'
+2025-03-15T00:04:42+00:00 DEBUG (7): Prodotto con only_pickup trovato!
+2025-03-15T00:04:42+00:00 DEBUG (7): Order Shipping Method salvato: pickupshipping_pickupshipping

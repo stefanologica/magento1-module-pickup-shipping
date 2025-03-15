@@ -57,7 +57,6 @@ class TuxWeb_PickupShipping_Model_Observer
      */
     public function validateOrder($observer)
     {
-        $quote = $observer->getEvent()->getQuote();
         $order = $observer->getEvent()->getOrder();
         $items = $order->getAllItems();
 
@@ -73,11 +72,9 @@ class TuxWeb_PickupShipping_Model_Observer
                 break;
             }
         }
-        Mage::helper('tuxweb_pickupshipping')->log('Order Shipping Method salvato: ' . $order->getShippingMethod(), true);
-        Mage::helper('tuxweb_pickupshipping')->log('Quote Shipping Method salvato: ' . $quote->getShippingMethod(), true);
 
         // Se c'è un prodotto "only_pickup", accetta solo "pickupshipping" come metodo di spedizione
-        if ($hasPickupProduct && strtolower($order->getShippingMethod()) !== 'pickupshipping') {
+        if ($hasPickupProduct && strtolower($order->getShippingMethod()) !== 'pickupshipping_pickupshipping') {
             Mage::throwException("Puoi concludere l'ordine solo con il metodo di ritiro in sede.");
         }
         Mage::helper('tuxweb_pickupshipping')->log('Sto validando l\'ordine. Variabile hasPickupProduct = '.$hasPickupProduct);
